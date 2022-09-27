@@ -3,3 +3,43 @@
     padding:0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: rgba(15, 15, 15, 0.927) !important;
+    margin: 3.7rem auto !important;
+    text-align: center !important;
+    color: white !important;
+   
+}
+.container {
+    /* border: 2px solid red; */
+
+}
+.container h1 {
+    margin-bottom: 3rem;
+    font-size: 50px;
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+   
+
+}
+#input {
+    flex: 0.5 0 0%;
+    padding: 0.3rem 0.5rem;
+    outline: none;
+    transform: translate(11%, -50%);
+}
+
+#button {
+    flex: 0.1 0 0%;
+    outline: none;
+    border: none;
+    background: none;
+    position: relative;
+    right: 23px;
+    top: -18px;
+    
+}
