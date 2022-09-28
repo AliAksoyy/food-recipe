@@ -32,11 +32,12 @@ btn.addEventListener("click", ()=> {
 
        const  renderRecipe = (recipes) => {
         console.log(recipes)
-        const cardDiv = document.querySelector("#card")
+        const row = document.querySelector("#row")
 
         console.log(recipes.hits[0].recipe)
 
-        cardDiv.innerHTML = `
+        row.innerHTML += `
+        <div id="card" class="card border border-4" style="width: 16rem; ">
          <img " src="${
            recipes.hits[0].recipe.image
          }" class="card-img-top " alt="...">
@@ -58,10 +59,12 @@ btn.addEventListener("click", ()=> {
                 </ul>
             </div>
             <div class="card-body">
-                <button><a href="${recipes.hits[0].recipe.url}" target="_blank" class="card-link p-2">View Recipe</a></button>
+                <button><a href="${
+                  recipes.hits[0].recipe.url
+                }" target="_blank" class="card-link p-2">View Recipe</a></button>
             </div>
         </div>
-        
+        </div>
         `;
        }
 
@@ -70,4 +73,9 @@ btn.addEventListener("click", ()=> {
 
 
 
+    fetchRecipe("Baked Chicked")
+    fetchRecipe("Baked Chicked")
+    fetchRecipe("Baked Chicked")
+    fetchRecipe("Baked Chicked")
+    fetchRecipe("Baked Chicked")
     fetchRecipe("Baked Chicked")
